@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
   ShieldCheck, Lock, KeyRound, Bell, Palette, Globe, HeadphonesIcon,
-  LogOut, ChevronRight, BadgeCheck, FileSpreadsheet,
+  LogOut, ChevronRight, BadgeCheck, FileSpreadsheet, Gift, CreditCard,
 } from "lucide-react";
 import { toast } from "sonner";
 import { AppShell } from "@/components/layout/app-shell";
@@ -18,22 +18,24 @@ const menuGroups = [
     title: "Account",
     items: [
       { label: "Statement of account", icon: FileSpreadsheet, href: "/statement" },
+      { label: "Referrals & earnings", icon: Gift, href: "/referrals" },
+      { label: "Payment methods", icon: CreditCard, href: "/wallet/payment-methods" },
     ],
   },
   {
     title: "Security",
     items: [
-      { label: "Change password", icon: Lock, href: "#" },
-      { label: "Transaction PIN", icon: KeyRound, href: "#" },
-      { label: "Two-factor authentication", icon: ShieldCheck, href: "#" },
+      { label: "Change password", icon: Lock, href: "/profile/security" },
+      { label: "Transaction PIN", icon: KeyRound, href: "/profile/security" },
+      { label: "Two-factor authentication", icon: ShieldCheck, href: "/profile/security" },
     ],
   },
   {
     title: "Preferences",
     items: [
-      { label: "Notification settings", icon: Bell, href: "#" },
-      { label: "Appearance", icon: Palette, href: "#" },
-      { label: "Language & region", icon: Globe, href: "#" },
+      { label: "Notification settings", icon: Bell, href: "/profile/preferences" },
+      { label: "Appearance", icon: Palette, href: "/profile/preferences" },
+      { label: "Language & region", icon: Globe, href: "/profile/preferences" },
     ],
   },
   {

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Plus, ArrowUpRight, Copy, History, FileSpreadsheet } from "lucide-react";
+import { Plus, ArrowUpRight, Copy, History, FileSpreadsheet, CreditCard } from "lucide-react";
 import { toast } from "sonner";
 import { AppShell } from "@/components/layout/app-shell";
 import { PageHeader } from "@/components/shared/page-header";
@@ -93,6 +93,19 @@ export default function WalletPage() {
           <div className="flex-1">
             <p className="text-sm font-semibold">Statement of account</p>
             <p className="text-xs text-ink-600 dark:text-paper-200/50">Download your activity as CSV</p>
+          </div>
+        </Link>
+
+        <Link
+          href="/wallet/payment-methods"
+          className="flex items-center gap-3.5 rounded-2xl border border-ink-200/60 dark:border-ink-700/60 bg-white dark:bg-ink-850 p-4 shadow-soft transition-colors hover:bg-ink-50 dark:hover:bg-ink-800/60"
+        >
+          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-500">
+            <CreditCard className="h-4 w-4" />
+          </span>
+          <div className="flex-1">
+            <p className="text-sm font-semibold">Payment methods</p>
+            <p className="text-xs text-ink-600 dark:text-paper-200/50">Manage cards and bank details</p>
           </div>
         </Link>
 

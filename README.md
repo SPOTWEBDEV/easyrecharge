@@ -33,6 +33,7 @@ npm run start
 - **Transactions**: searchable, filterable history + transaction detail/receipt page with working share/download
 - **Statement of Account**: date-range filter (presets or custom), running summary, and CSV export of the user's activity
 - **Floating AI support chat**: available on every page (including the landing page), gives contextual mock replies about airtime, wallet, bills, security, refunds and agents; conversation is persisted to `sessionStorage` for the browser session only
+- **Admin Panel** (`/admin`): a full 26-page back office — Dashboard, Analytics, Revenue, Sales, Transactions, Wallets (with pending withdrawal approvals), Customers, Agents, Commissions, Products, Bill Providers, Pricing, Profit Settings (the margin/markup system from the spec, with a live cost → customer-pays preview), Orders, Coupons, Announcements, Notifications, Reports (downloadable), Support Tickets, Blog, Pages (CMS), Roles & Permissions, Settings, Audit Logs, Activity Logs, and API Management. Collapsible sidebar, searchable/paginated data tables throughout, and recharts-powered charts on the dashboard/analytics/revenue/sales pages.
 - **Profile & Notifications** pages
 - **PWA**: manifest, service worker with offline caching, offline fallback page, install prompt (shown app-wide), app icons
 - **Dark / light mode**, mobile bottom navigation with a floating quick-purchase button

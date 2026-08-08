@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-body antialiased">
         <Providers>
-          <div className="mx-auto min-h-screen max-w-md md:max-w-none">{children}</div>
+          <div className="min-h-screen">{children}</div>
           <InstallPrompt />
           <AiSupportChat />
         </Providers>

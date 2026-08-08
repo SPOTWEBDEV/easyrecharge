@@ -28,7 +28,7 @@ function VerifyOtpForm() {
     try {
       await authApi.verifyOtp(code);
       toast.success("Phone verified — welcome to EasyBills!");
-      router.push("/dashboard");
+      router.push("/welcome");
     } catch (err) {
       toast.error(err instanceof Error ? err.message : "Verification failed.");
       setCode("");

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/shared/logo";
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
@@ -39,9 +40,7 @@ export function InstallPrompt() {
         exit={{ y: 100, opacity: 0 }}
         className="fixed inset-x-4 bottom-24 z-50 mx-auto flex max-w-md items-center gap-3 rounded-2xl border border-ink-200 dark:border-ink-700 bg-white dark:bg-ink-850 p-3.5 shadow-soft-dark"
       >
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-mesh font-display text-base font-bold text-ink-950">
-          K
-        </span>
+        <Logo mark className="h-11 w-11 shrink-0" />
         <div className="min-w-0 flex-1">
           <p className="text-sm font-semibold">Install EasyBills</p>
           <p className="truncate text-xs text-ink-600 dark:text-paper-200/50">Faster access, works offline</p>

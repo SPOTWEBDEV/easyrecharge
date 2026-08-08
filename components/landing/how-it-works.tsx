@@ -42,7 +42,7 @@ export function HowItWorks() {
             transition={{ delay: i * 0.1, duration: 0.4 }}
             className="relative flex flex-col items-center text-center md:items-start md:text-left"
           >
-            <span className="relative z-10 flex h-16 w-16 items-center justify-center rounded-2xl bg-accent-mesh text-ink-950 shadow-glow">
+            <span className="relative z-10 flex h-16 w-16 items-center justify-center rounded-2xl bg-accent-mesh text-white shadow-glow">
               <step.icon className="h-6 w-6" />
             </span>
             <h3 className="mt-5 font-display text-lg font-semibold">

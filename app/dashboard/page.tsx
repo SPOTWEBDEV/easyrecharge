@@ -30,19 +30,22 @@ export default function DashboardPage() {
           </motion.div>
         )}
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, delay: 0.1 }}
-          className="flex items-center gap-3 overflow-hidden rounded-2xl bg-accent-mesh px-4 py-3 text-ink-950"
-        >
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/40">
-            <Gift className="h-4 w-4" />
-          </span>
-          <p className="text-xs font-semibold leading-snug">
-            Refer a friend and earn ₦500 cashback when they make their first purchase.
-          </p>
-        </motion.div>
+        <Link href="/referrals">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.35, delay: 0.1 }}
+            className="flex items-center gap-3 overflow-hidden rounded-2xl bg-accent-mesh px-4 py-3 text-white transition-transform active:scale-[0.98]"
+          >
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/25">
+              <Gift className="h-4 w-4" />
+            </span>
+            <p className="flex-1 text-xs font-semibold leading-snug">
+              Refer a friend and earn ₦500 cashback when they make their first purchase.
+            </p>
+            <ChevronRight className="h-4 w-4 shrink-0 opacity-80" />
+          </motion.div>
+        </Link>
 
         <div>
           <h2 className="mb-3 px-1 text-sm font-semibold text-ink-600 dark:text-paper-200/60">

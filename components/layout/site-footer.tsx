@@ -10,6 +10,7 @@ const columns = [
       { label: "Blog", href: "/blog" },
       { label: "Become an Agent", href: "/become-an-agent" },
       { label: "Developer API", href: "/developer-api" },
+      { label: "Admin Panel", href: "/admin" },
     ],
   },
   {

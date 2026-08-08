@@ -38,6 +38,12 @@ export default function ForgotPasswordPage() {
           <Button asChild size="lg" className="w-full">
             <Link href="/login">Back to login</Link>
           </Button>
+          <p className="text-xs text-ink-500 dark:text-paper-200/40">
+            Demo only — no real email is sent.{" "}
+            <Link href="/reset-password?token=demo" className="font-semibold text-brand-600 dark:text-brand-400">
+              Open the reset link
+            </Link>
+          </p>
         </div>
       </AuthShell>
     );
